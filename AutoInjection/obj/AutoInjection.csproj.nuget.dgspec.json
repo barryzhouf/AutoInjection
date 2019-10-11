@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\Other项目\\20190929AutoInjectionCore\\AutoInjectionCore\\AutoInjection\\AutoInjection.csproj": {}
+  },
+  "projects": {
+    "G:\\Other项目\\20190929AutoInjectionCore\\AutoInjectionCore\\AutoInjection\\AutoInjection.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Other项目\\20190929AutoInjectionCore\\AutoInjectionCore\\AutoInjection\\AutoInjection.csproj",
+        "projectName": "AutoInjection",
+        "projectPath": "G:\\Other项目\\20190929AutoInjectionCore\\AutoInjectionCore\\AutoInjection\\AutoInjection.csproj",
+        "packagesPath": "C:\\Users\\barry\\.nuget\\packages\\",
+        "outputPath": "G:\\Other项目\\20190929AutoInjectionCore\\AutoInjectionCore\\AutoInjection\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\barry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

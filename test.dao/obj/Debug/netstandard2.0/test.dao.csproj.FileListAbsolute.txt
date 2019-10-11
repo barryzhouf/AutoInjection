@@ -1,0 +1,14 @@
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\bin\Debug\netstandard2.0\test.dao.deps.json
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\bin\Debug\netstandard2.0\test.dao.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\bin\Debug\netstandard2.0\test.dao.pdb
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\obj\Debug\netstandard2.0\test.dao.csproj.CoreCompileInputs.cache
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\obj\Debug\netstandard2.0\test.dao.AssemblyInfoInputs.cache
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\obj\Debug\netstandard2.0\test.dao.AssemblyInfo.cs
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\obj\Debug\netstandard2.0\test.dao.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\obj\Debug\netstandard2.0\test.dao.pdb
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\obj\Debug\netstandard2.0\test.dao.csprojAssemblyReference.cache
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\bin\Debug\netstandard2.0\AutoInjection.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\bin\Debug\netstandard2.0\test.common.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\bin\Debug\netstandard2.0\AutoInjection.pdb
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\bin\Debug\netstandard2.0\test.common.pdb
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.dao\obj\Debug\netstandard2.0\test.dao.csproj.CopyComplete

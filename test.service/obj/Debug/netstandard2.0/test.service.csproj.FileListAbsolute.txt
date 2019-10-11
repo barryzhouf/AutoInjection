@@ -1,0 +1,16 @@
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\bin\Debug\netstandard2.0\test.service.deps.json
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\bin\Debug\netstandard2.0\test.service.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\bin\Debug\netstandard2.0\test.service.pdb
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\bin\Debug\netstandard2.0\AutoInjection.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\bin\Debug\netstandard2.0\test.dao.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\bin\Debug\netstandard2.0\AutoInjection.pdb
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\bin\Debug\netstandard2.0\test.dao.pdb
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\obj\Debug\netstandard2.0\test.service.csprojAssemblyReference.cache
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\obj\Debug\netstandard2.0\test.service.csproj.CoreCompileInputs.cache
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\obj\Debug\netstandard2.0\test.service.AssemblyInfoInputs.cache
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\obj\Debug\netstandard2.0\test.service.AssemblyInfo.cs
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\obj\Debug\netstandard2.0\test.service.csproj.CopyComplete
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\obj\Debug\netstandard2.0\test.service.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\obj\Debug\netstandard2.0\test.service.pdb
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\bin\Debug\netstandard2.0\test.common.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.service\bin\Debug\netstandard2.0\test.common.pdb

@@ -1,0 +1,12 @@
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.common\bin\Debug\netstandard2.0\test.common.deps.json
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.common\bin\Debug\netstandard2.0\test.common.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.common\obj\Debug\netstandard2.0\test.common.csproj.CoreCompileInputs.cache
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.common\obj\Debug\netstandard2.0\test.common.AssemblyInfoInputs.cache
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.common\obj\Debug\netstandard2.0\test.common.AssemblyInfo.cs
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.common\bin\Debug\netstandard2.0\test.common.pdb
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.common\bin\Debug\netstandard2.0\AutoInjection.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.common\bin\Debug\netstandard2.0\AutoInjection.pdb
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.common\obj\Debug\netstandard2.0\test.common.csprojAssemblyReference.cache
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.common\obj\Debug\netstandard2.0\test.common.csproj.CopyComplete
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.common\obj\Debug\netstandard2.0\test.common.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\test.common\obj\Debug\netstandard2.0\test.common.pdb

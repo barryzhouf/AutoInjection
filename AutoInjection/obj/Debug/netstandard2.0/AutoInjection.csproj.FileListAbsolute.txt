@@ -1,0 +1,8 @@
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\AutoInjection\obj\Debug\netstandard2.0\AutoInjection.csproj.CoreCompileInputs.cache
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\AutoInjection\obj\Debug\netstandard2.0\AutoInjection.AssemblyInfoInputs.cache
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\AutoInjection\obj\Debug\netstandard2.0\AutoInjection.AssemblyInfo.cs
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\AutoInjection\bin\Debug\netstandard2.0\AutoInjection.deps.json
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\AutoInjection\bin\Debug\netstandard2.0\AutoInjection.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\AutoInjection\bin\Debug\netstandard2.0\AutoInjection.pdb
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\AutoInjection\obj\Debug\netstandard2.0\AutoInjection.dll
+G:\Other项目\20190929AutoInjectionCore\AutoInjectionCore\AutoInjection\obj\Debug\netstandard2.0\AutoInjection.pdb
