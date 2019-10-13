@@ -82,6 +82,6 @@ AOP拦截实现类
 	public interface Iuserservice
     {
 		//Transactional AOP拦截标签，TestInterceptor AOP拦截处理类。
-        [Transactional(typeof(TestInterceptor))]
-        List<string> getList();
-    }
+		[Transactional(typeof(TestInterceptor))]
+		List<string> getList();
+	}
