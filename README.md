@@ -1,87 +1,75 @@
-# AutoInjection
+AutoInjection
+ä¸€æ¬¾.net coreä¾èµ–æ³¨å…¥å’ŒAOPæ‹¦æˆªå™¨ç»„ä»¶ã€‚
 
-Ò»¿î.net coreÒÀÀµ×¢ÈëºÍAOPÀ¹½ØÆ÷×é¼ş¡£
+å¼•å…¥è¯¥ç»„ä»¶æ–¹æ³•ï¼š
+å®‰è£…AutoInjection NuGetåŒ…ã€‚
+asp.net core Startup.csæ–‡ä»¶
 
-ÒıÈë¸Ã×é¼ş·½·¨£º
-°²×°AutoInjection NuGet°ü¡£
-asp.net core Startup.csÎÄ¼ş
+public void ConfigureServices(IServiceCollection services)
+{
+    //æ·»åŠ ä¾èµ–æ³¨å…¥ç»„ä»¶AutoInjection
+    services.AddMvc().AddAutowired();
+    //æ–¹æ³•ä¸€ï¼šæ¥å£æ³¨å…¥æ–¹å¼
+    services.AddSbSingleton<Iuserdao, userdao>();
+    services.AddSbSingleton<Iuserservice, userservice>();
+    //æ–¹æ³•äºŒï¼šç±»æ³¨å…¥æ–¹å¼
+    //services.AddSbSingleton<userdao>();
+    //services.AddSbSingleton<userservice>();
+    //AOPæ‹¦æˆªç±»
+    services.AddSbSingleton<TestInterceptor>();
+}
+Controllerä½¿ç”¨æ–¹å¼ï¼š
 
-
-	public void ConfigureServices(IServiceCollection services)
-	{
-		//Ìí¼ÓÒÀÀµ×¢Èë×é¼şAutoInjection
-		services.AddMvc().AddAutowired();
-
-		//·½·¨Ò»£º½Ó¿Ú×¢Èë·½Ê½
-		services.AddSbSingleton<Iuserdao, userdao>();
-		services.AddSbSingleton<Iuserservice, userservice>();
-
-		//·½·¨¶ş£ºÀà×¢Èë·½Ê½
-		//services.AddSbSingleton<userdao>();
-		//services.AddSbSingleton<userservice>();
-
-		//AOPÀ¹½ØÀà
-		services.AddSbSingleton<TestInterceptor>();
-	}
-
-ControllerÊ¹ÓÃ·½Ê½£º
-
-	//asp.net mvc¿ØÖÆÆ÷Ê¹ÓÃÒÀÀµ×¢Èë
-	public class HomeController : Controller
-	{
-		//ÒÀÀµ×¢Èë±êÇ©
-		[Autowired]
-        public Iuserservice uservice;
-
-        public IActionResult Index()
-        {
-            var list = uservice.getList();
-            return View();
-        }
-	}
-
-ÆÕÍ¨classÀàÊ¹ÓÃ·½Ê½
-
-	//ÆÕÍ¨classÀàÊ¹ÓÃÒÀÀµ×¢Èë
-	public class userservice : Iuserservice
+//asp.net mvcæ§åˆ¶å™¨ä½¿ç”¨ä¾èµ–æ³¨å…¥
+public class HomeController : Controller
+{
+    //ä¾èµ–æ³¨å…¥æ ‡ç­¾
+    [Autowired]
+    public Iuserservice uservice;
+    public IActionResult Index()
     {
-        [Autowired]
-        private Iuserdao udao { set; get; }
-
-        public List<string> getList()
-        {
-            return udao.getList();
-        }
+        var list = uservice.getList();
+        return View();
     }
+}
+æ™®é€šclassç±»ä½¿ç”¨æ–¹å¼
 
-AOPÀ¹½ØÊµÏÖÀà
-
-	public class TestInterceptor : TransactionalInterceptor
-	{
-		/// <summary>
-		/// Ö´ĞĞÇ°
-		/// </summary>
-		/// <param name="invocation"></param>
-		public override void BeforeExecute(IInvocation invocation)
-		{
-			Console.WriteLine("{0}À¹½ØÇ°£¬²ÎÊı¸öÊı", invocation.Method.Name, invocation.Arguments.Length);     
-		}
-
-		/// <summary>
-		/// Ö´ĞĞºó
-		/// </summary>
-		/// <param name="invocation"></param>
-		public override void Executed(IInvocation invocation)
-		{
-			Console.WriteLine("{0}À¹½Øºó£¬·µ»ØÖµÊÇ{1}", invocation.Method.Name, invocation.ReturnValue);
-		}
-	}
-
-½Ó¿ÚÀàAOP±ê¼ÇÊ¾Àı
-
-	public interface Iuserservice
+//æ™®é€šclassç±»ä½¿ç”¨ä¾èµ–æ³¨å…¥
+public class userservice : Iuserservice
+{
+    [Autowired]
+    private Iuserdao udao { set; get; }
+    public List<string> getList()
     {
-		//Transactional AOPÀ¹½Ø±êÇ©£¬TestInterceptor AOPÀ¹½Ø´¦ÀíÀà¡£
-		[Transactional(typeof(TestInterceptor))]
-		List<string> getList();
-	}
+        return udao.getList();
+    }
+}
+AOPæ‹¦æˆªå®ç°ç±»
+
+public class TestInterceptor : TransactionalInterceptor
+{
+    /// <summary>
+    /// æ‰§è¡Œå‰
+    /// </summary>
+    /// <param name="invocation"></param>
+    public override void BeforeExecute(IInvocation invocation)
+    {
+        Console.WriteLine("{0}æ‹¦æˆªå‰ï¼Œå‚æ•°ä¸ªæ•°", invocation.Method.Name, invocation.Arguments.Length);     
+    }
+    /// <summary>
+    /// æ‰§è¡Œå
+    /// </summary>
+    /// <param name="invocation"></param>
+    public override void Executed(IInvocation invocation)
+    {
+        Console.WriteLine("{0}æ‹¦æˆªåï¼Œè¿”å›å€¼æ˜¯{1}", invocation.Method.Name, invocation.ReturnValue);
+    }
+}
+æ¥å£ç±»AOPæ ‡è®°ç¤ºä¾‹
+
+public interface Iuserservice
+{
+    //Transactional AOPæ‹¦æˆªæ ‡ç­¾ï¼ŒTestInterceptor AOPæ‹¦æˆªå¤„ç†ç±»ã€‚
+    [Transactional(typeof(TestInterceptor))]
+    List<string> getList();
+}
